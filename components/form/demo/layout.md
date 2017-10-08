@@ -26,7 +26,8 @@ class FormLayoutDemo extends React.Component {
   }
   handleFormLayoutChange = (e) => {
     this.setState({ formLayout: e.target.value });
-  }
+    console.log(this.state.formLayout);
+  }
   render() {
     const { formLayout } = this.state;
     const formItemLayout = formLayout === 'horizontal' ? {
